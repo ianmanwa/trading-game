@@ -82,3 +82,29 @@ body{
     align-items: center;
     display: none;
 }
+
+@media (max-width: 600px) {
+
+    .form,
+    .win-screen,
+    .lose-screen {
+        width: 95%;
+    }
+
+    .color-div {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .up-btn,
+    .down-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #game-div {
+        font-size: 1rem;
+    }
+}

@@ -21,7 +21,6 @@ async function form() {
     let randomNumber = Math.round(Math.random() * 1)
     const options = ["up-btn", "down-btn"]
     arrayOption = options[randomNumber]
-    console.log(arrayOption)
 }
 form()
 
@@ -33,8 +32,6 @@ form()
         const receivedAmount = document.getElementById("amount-id").value
         amount = Number(receivedAmount)
         const button = e.submitter
-        console.log(button.id)
-        console.log(amount)
 
         if (button.id == arrayOption) 
         {

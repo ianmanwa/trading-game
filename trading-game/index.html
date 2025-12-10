@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trading Game </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <navbar>
+        <div class="color-div">
+            <text> Made by <Strong>Ian Manwa </Strong></text>
+            <div id="Balance"></div>
+        </div>
+    </navbar>
+
+    <!-- Actual game starts here -->
+    <div id="game-div">
+        <form id="form-div" class="form">
+            <text> Welcome to the trading game.<br> Enter an amount and choose up or down </text>
+            <input id="amount-id" class="amount" type="number" placeholder="amount" required>
+            <button id="up-btn" class="up-btn" type="submit" value="up"> UP</button>
+            <button id="down-btn" class="down-btn" type="submit" value="down"> DOWN </button>
+        </form>
+    </div>
+
+    <!-- Congratulations screen -->
+    <div id="win-id" class="win-screen">
+    <p> Congrats. You won! </p>
+    <button id="play-again1"> Play again </button>
+    </div>
+
+    <!-- Losing screen -->
+    <div id="lose-id" class="lose-screen">
+    <p> Sorry You lost! </p>
+    <button id="play-again2"> Play again </button>
+    </div>
+
+    <!-- Losing screen -->
+    <div id="broke" class="lose-screen">
+    <p> Sorry You're out of funds! </p>
+    <button id="Buy More coins"> Play again </button>
+    </div>
+
+    <script src="trader.js"></script>
+</body>
+
+</html>

@@ -43,6 +43,8 @@ form()
         {
             noCheat.style.display = " flex "
             gameDiv.style.display = "none"
+
+            showBalance()
         }
 
         // When the player is out of coins

@@ -13,9 +13,10 @@
     <navbar>
         <div class="color-div">
             <text> Made by <Strong>Ian Manwa </Strong></text>
-            <div id="Balance"></div>
         </div>
     </navbar>
+
+    <div id="Balance" class="balance"></div>
 
     <!-- Actual game starts here -->
     <div id="game-div">
@@ -39,10 +40,17 @@
     <button id="play-again2"> Play again </button>
     </div>
 
-    <!-- Losing screen -->
-    <div id="broke" class="lose-screen">
-    <p> Sorry You're out of funds! </p>
-    <button id="Buy More coins"> Play again </button>
+    <!-- Out of money -->
+    <div id="broke" class="broke-screen">
+    <p> Sorry! You're out of funds! </p>
+    <button id="buy-more"> Buy more coins </button>
+    </div>
+
+
+    <!-- Choose correct amount -->
+    <div id="cheat" class="cheat-screen">
+    <p> Come on man, you ain't thaaaaaat rich! </p>
+    <button id="play-again3"> Play again </button>
     </div>
 
     <script src="trader.js"></script>

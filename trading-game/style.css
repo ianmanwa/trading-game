@@ -32,8 +32,9 @@ body{
     width: 100vh;
     padding: 0.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items:center;
+    margin-bottom: 3rem;
 }
 
 .amount{
@@ -83,11 +84,57 @@ body{
     display: none;
 }
 
+
+.broke-screen{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    width: 600px;
+    padding-top: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.balance{
+    display: flex;
+    border-radius: 1rem;
+    background-color: rgb(129, 49, 2);
+    color: White;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.cheat-screen{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    width: 600px;
+    padding-top: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+
 @media (max-width: 600px) {
 
     .form,
     .win-screen,
-    .lose-screen {
+    .lose-screen,
+    .balance,
+    .cheat-screen {
         width: 95%;
     }
 
@@ -101,7 +148,7 @@ body{
     .up-btn,
     .down-btn {
         width: 100%;
-        max-width: 300px;
+        max-width: 200px;
     }
 
     #game-div {

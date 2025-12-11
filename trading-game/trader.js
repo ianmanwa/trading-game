@@ -38,17 +38,9 @@ form()
 
         
         
-        // When the player enters ammount larger than their balance
-        if( amount > bank )
-        {
-            noCheat.style.display = " flex "
-            gameDiv.style.display = "none"
-
-            showBalance()
-        }
 
         // When the player is out of coins
-        else if( bank >= 0 ){  
+        if( bank <= 0 ){  
             noFunds.style.display = "flex"
             gameDiv.style.display = "none"
 
@@ -66,8 +58,16 @@ form()
             showBalance()
 
         }
+        // When the player has no more coins
+        else if( amount > bank )
+        {
+            noCheat.style.display = " flex "
+            gameDiv.style.display = "none"
+
+            showBalance()
+        }
         //When the player loses
-        else 
+        else
         {
             loserScreen.style.display = "flex"
             gameDiv.style.display = "none"

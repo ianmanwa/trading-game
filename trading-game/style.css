@@ -133,10 +133,16 @@ body{
     .form,
     .win-screen,
     .lose-screen,
-    .balance,
     .cheat-screen {
         width: 95%;
     }
+
+.balance{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+}
 
     .color-div {
         width: 100%;

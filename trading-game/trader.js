@@ -5,7 +5,7 @@ let bank = 20
 //Function to update the Balance
 async function showBalance() {
     const balance = document.getElementById("Balance")
-    balance.innerHTML = `<p> Coins: 🪙${bank} </p>`
+    balance.textContent = `<p> Coins: 🪙${bank} </p>`
 }
 showBalance()
 
